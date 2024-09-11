@@ -1,0 +1,46 @@
+# Lógica de programação
+
+# Photshop
+
+# front-end
+- HTML5 e CSS3
+- UX UI
+- JavaScript
+- Frameworks (bootstrap)
+- CMS (wordpress)
+
+# banco de dados
+
+# sistemas desktop
+electron
+
+# back-end (Java ou php)
+
+# testes
+
+# pi
+___________________________________
+Lógica de programação
+- variáveis
+- operadores
+- algorítmo
+- estruturas de controle
+- POO
+- estruturas de dados
+
+GIT e GITHUB
+
+Comandos básicos do git:
+git config --global user.name "Seu nome"
+git config --global user.email "seuemail@email.com"
+git clone url_do_repositório (clonar um repositório)
+git add . (adciona ao repositório local)
+git commit -m "tutorial" (documentar as alterações)
+git push (enviar ao repositório GitHub)
+
+Gerar token GitHub
+1) Settings
+2) Developer Settings
+3) Token classic
+4) Gerar o token selecionando tudo, guardar o token
+
