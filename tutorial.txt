@@ -124,3 +124,5 @@ console.clear() -> Limpar a tela do console
 const -> criar(declarar) uma constante
 let -> criar(declarar) uma variável
 typeof() -> verificar o tipo de variável
+ATENÇÃO: No JavaScript uma variável pode ser criada usando Let ou Var
+var é "obsoleto e inseguro", usar sempre o Let
