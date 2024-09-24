@@ -126,3 +126,17 @@ let -> criar(declarar) uma variável
 typeof() -> verificar o tipo de variável
 ATENÇÃO: No JavaScript uma variável pode ser criada usando Let ou Var
 var é "obsoleto e inseguro", usar sempre o Let
+
+_______________________________________________________________________________________________________________________
+
+MANDAMENTOS DA PROGRAMAÇÃO 
+
+1) UX User eXperience) - desenvolver sempre pensando na experiência do usuário
+
+2) Usar o minímo possível de código (variáveis, operadores, comparadores, estrutura de controle etc) para resolver o problema (lembrar do marcapasso)
+
+3) Entender o problema. Não adianta sentar na frente do computador se você não sabe resolver o problema.
+"Algoritmo ("receita do bolo")
+Conceito:
+            cvariáveis
+entrada - processamento - saída
