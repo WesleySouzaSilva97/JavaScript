@@ -138,5 +138,5 @@ MANDAMENTOS DA PROGRAMAÇÃO
 3) Entender o problema. Não adianta sentar na frente do computador se você não sabe resolver o problema.
 "Algoritmo ("receita do bolo")
 Conceito:
-            cvariáveis
+            variáveis
 entrada - processamento - saída
