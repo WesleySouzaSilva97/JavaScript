@@ -144,3 +144,25 @@ MANDAMENTOS DA PROGRAMAÇÃO
 Conceito:
             variáveis
 entrada - processamento - saída
+
+_______________________________________________________________________________________________________________________
+
+Estruturas de controle
+- condiconais
+- laços de repetições
+
+Estruturas de controle condiconais
+
+if (condição) {
+    // condição verdadeira (se não for verdadeira ela vai ignirar)
+}
+
+if (condição) {
+    // condição verdadeira 
+} else {
+    //condição falsa  (quando a condição e falsa ele escreve outro codigo nessa opção)
+}
+
+Observações:
+1) Uma condição nunca pode ser verdadeira e falsa simutaneamente
+2) No uso do if-else sempre uma das condições será processada.

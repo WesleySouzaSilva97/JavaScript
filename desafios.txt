@@ -1,3 +1,16 @@
 Desafio 1: "A hora do código"
 code.org
 Fazer o desafio  "A hora do código", imprimir o certificado, postar no linkedin e marcar o Professor
+
+Desafio: Etanol x Gasolina
+Desenvolver um APP para verificar qual combustivel é mais vantajoso abastecer
+
+O etanol será mais vantajoso se os eu preço for 70% oumenos do que o da gasolina 
+
+//variaveis 
+etanol, gasolina
+
+//processamento e saída
+if (etanol <0.7 * gasolina) {
+// abastecer com etanol
+
