@@ -176,3 +176,14 @@ if (condição 1) {
 }
 
 Obs: Nesta estrutura o else é opcional, porém se indicado caso não nenhuma condição for veradeira ele obrigatóriamente executará o que estiver no else.
+
+switch case (uso de variável numérica (número inteiro))
+
+switch (variável) {
+    case 1:
+    // código caso o valor da variavel seja 1
+    break
+    default:
+    // opcinal, o código será executado se nenhum caso for definido
+    break 
+}
