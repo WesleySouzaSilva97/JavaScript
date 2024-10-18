@@ -35,6 +35,7 @@ consumo = peso * 0.035
 
 //saida
 console.log("Ficha do aluno")
+console.log("")
 console.log("_____________________")
 console.log(`Nome: ${nome}`)
 console.log(`Idade: ${idade}`)
@@ -42,11 +43,6 @@ console.log(`Peso: ${peso}`)
 console.log(`Altura: ${altura}`)
 console.log(`FCM: ${FCM}`)
 console.log(`IMC: ${imc.toFixed(2)}`)
-console.log()
-
-
-
-
 
 if (imc < 18.5) {
     console.log("Abaixo do peso".cyan)
