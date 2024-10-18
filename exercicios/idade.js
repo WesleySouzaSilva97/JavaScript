@@ -11,13 +11,11 @@ console.clear()
 console.log("Verificar maioridade")
 idade = Number(input.question("Digite a idade:"))
 console.log(`Idade: ${idade}`)
-if (idade < 18) {
-    console.log("menor de idade")
-}
+
 
 
 if (idade >= 18) {
     console.log("Maior de idade")
-} else {
+} else if {
     console.log("Maior de idade")
 }

@@ -1,28 +1,37 @@
 /**
- * *Ficha de um aluno da cademia
+ * APP - Calculadora de saude 
  * @author Wesley de Souza da Silva
  */
 
+const input = require('readline-sync')
+const colors = require('colors')
+
 //variaveis
-let nome  
-let idade
-let peso
-let altura
-let vip 
-let FCM
-let IMC
+let nome, idade, peso, altura, FCM, imc 
+
 
 console.clear()
 
-nome = "Wesley Souza"
-idade = 27
-peso =200
-altura = 1.95
-vip = true
+console.log(" _                _ _               _            _       _             ")
+console.log("| |              | | |             | |          | |     | |            ")
+console.log("| |__   ___  __ _| | |_    ___ __ _| | ___ _   _| | __ _| |_ ___  _ __ ")
+console.log("| '_ \\ / _ \\/ _` | | __|  / __/ _` | |/ __| | | | |/ _` | __/ _ \\| '__|")
+console.log("| | | |  __/ (_| | | |_  | (_| (_| | | (__| |_| | | (_| | || (_) | |   ")
+console.log("|_| |_|\\___|\\__,_|_|\\__|  \\___\\__,_|_|\\___|\\__,_|_|\\__,_|\\__\\___/|_|   ")
+console.log("")
+
+//entarda
+nome = input.question("Digite o seu nome: ")
+idade = Number(input.question("Digite a suas idade: "))
+peso = Number(input.question("Digite o seu peso em Kg: "))
+altura = Number(input.question("DIgite a sua altura em metros: "))
+
 
 // processamento
 fcm = 208 - (0.7 * idade)
 imc = peso / (altura * altura)
+consumo = peso * 0.035
+
 
 //saida
 console.log("Ficha do aluno")
@@ -31,20 +40,27 @@ console.log(`Nome: ${nome}`)
 console.log(`Idade: ${idade}`)
 console.log(`Peso: ${peso}`)
 console.log(`Altura: ${altura}`)
-console.log(`Vip: ${vip}`)
 console.log(`FCM: ${FCM}`)
 console.log(`IMC: ${imc.toFixed(2)}`)
+console.log()
+
+
+
+
 
 if (imc < 18.5) {
-    console.log("Abaixo do peso")
+    console.log("Abaixo do peso".cyan)
   } else if (imc < 25) {
-    console.log("Peso normal")
+    console.log("Peso normal".green)
   } else if (imc < 30) {
-    console.log("Sobrepeso")
+    console.log("Levemente acima do peso".yellow)
   } else if (imc < 35) {
-    console.log("Obesidade grau 1")
+    console.log("Obesidade grau I".magenta)
   } else if (imc < 40) {
-    console.log("Obesidade grau 2")
+    console.log("Obesidade grau II".red)
   } else {
-    console.log("Obesidade grau 3 (mórbida)")
+    console.log("Obesidade grau III (mórbida)".bgRed)
   }
+
+  //consumo de água
+  console.log(`Consumir por dia ${consumo.toFixed(3)} litros de água`)
