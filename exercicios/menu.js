@@ -39,7 +39,26 @@ console.log("")
         console.log("")
 
 
-console.log("2. Carregar o sistema Linux")
+
+console.log("")
+        console.log("                   ....iilllllllllllll")
+        console.log("       ....iillll  lllllllllllllllllll")
+        console.log("   iillllllllllll  lllllllllllllllllll")
+        console.log("   llllllllllllll  lllllllllllllllllll")
+        console.log("   llllllllllllll  lllllllllllllllllll")
+        console.log("   llllllllllllll  lllllllllllllllllll")
+        console.log("   llllllllllllll  lllllllllllllllllll")
+        console.log("   llllllllllllll  lllllllllllllllllll")
+        console.log("")
+        console.log("   llllllllllllll  lllllllllllllllllll")
+        console.log("   llllllllllllll  lllllllllllllllllll")
+        console.log("   llllllllllllll  lllllllllllllllllll")
+        console.log("   llllllllllllll  lllllllllllllllllll")
+        console.log("   llllllllllllll  lllllllllllllllllll")
+        console.log("   `^^^^^^lllllll  lllllllllllllllllll")
+        console.log("         ````^^^^  ^^lllllllllllllllll")
+        console.log("                        ````^^^^^^llll")
+        console.log("")
 
 opcao = Number (input.question("Digite a opcao desejada: "))
 
