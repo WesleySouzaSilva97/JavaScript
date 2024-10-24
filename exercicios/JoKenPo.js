@@ -10,46 +10,45 @@ const input = require('readline-sync') // Biblioteca readline-sync para ler entr
 console.clear()
 
 // Entrada - Solicitar escolha do jogador
-let jogador = Number(input.question("Digite a opção desejada entre 1.Pedra, 2.Papel ou 3.Tesoura: ")) // Solicita ao usuário a opção
+let jogador, computador
 
-// Verificar se a escolha é válida
-if (jogador !== 1 && jogador !== 2 && jogador !== 3) {
-    console.log("Opção inválida. Escolha entre 1.Pedra, 2.Papel ou 3.Tesoura.") // Exibe mensagem de erro caso a opção não seja válida
-} else {
-    // Processamento - Gerar escolha aleatória para o computador
-    let computador = Math.floor(Math.random() * 3 + 1) // Gera um número aleatório entre 1 e 3
+console.clear()
+console.log("_____Jokenpo_____")
+console.log("1. Pedra")
+console.log("2. Papel")
+console.log("3. Tesoura")
 
-    // Saída - Mostrar as escolhas do jogador
-    if (jogador === 1) {
-        console.log("Jogador escolheu: Pedra")
-    } else if (jogador === 2) {
-        console.log("Jogador escolheu: Papel")
-    } else {
-        console.log("Jogador escolheu: Tesoura")
-    }
+// Lógica do jogador 
+jogador = Number(input.question("Digite a opcao desejada entre 1.Pedra, 2.Papel ou 3.Tesoura: ")) // Solicita ao usuário a opção
 
-    // Saída - Mostrar as escolhas do computador
-    if (computador === 1) {
-        console.log("Computador escolheu: Pedra")
-    } else if (computador === 2) {
-        console.log("Computador escolheu: Papel")
-    } else {
-        console.log("Computador escolheu: Tesoura")
-    }
+console.log("")
+switch (jogador) {
+    case 1:
+        console.log("Jogador escolheu: PEDRA")
+        break
+    case 2:
+        console.log("Jogador escolheu: PAPEL")
+        break
+    case 3:
+        console.log("Jogador escolheu: TESOURA")
+        break
+    default:
+        console.log("Opção inválida")
+        break
 
-    // Processamento - Verificar quem ganhou
-    if (jogador === computador) {
-        console.log("Deu empate") // Caso as escolhas sejam iguais
-    } else if (
-        (jogador === 1 && computador === 3) || // Pedra vence Tesoura
-        (jogador === 2 && computador === 1) || // Papel vence Pedra
-        (jogador === 3 && computador === 2)    // Tesoura vence Papel
-    ) {
-        console.log("Jogador venceu") // Jogador vence
-    } else {
-        console.log("Computador venceu") // Computador vence
-    }
 }
 
-// Comando para instalação da biblioteca readline-sync
-// npm install readline-sync
+// Lógica do computador
+computador = Math.floor(Math.random() * 3 + 1)
+
+switch (computador) {
+    case 1:
+        console.log("computador escolheu: PEDRA")
+        break
+    case 2:
+        console.log("computador escolheu: PAPEL")
+        break
+    case 3:
+        console.log("computador escolheu: TESOURA")
+        break
+}
