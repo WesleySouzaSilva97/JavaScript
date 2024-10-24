@@ -5,6 +5,7 @@
 
 // Importar biblioteca necessária
 const input = require('readline-sync') // Biblioteca readline-sync para ler entradas do usuário
+const colors = require('colors')
 
 // Limpar a tela do console antes de uma nova entrada
 console.clear()
@@ -51,4 +52,14 @@ switch (computador) {
     case 3:
         console.log("computador escolheu: TESOURA")
         break
+}
+
+// Lógica para determinar o vencedor ou declarar empate
+
+if (jogador === computador ){
+    console.log ("EMPATE".cyan)
+} else if (jogador === 1 && computador === 3 || jogador === 2 && computador === 1 || jogador === 3 && computador === 2) {
+    console.log ("Jogador VENCEU".green)
+} else {
+    console.log ("Computador VENCEU".yellow)
 }
