@@ -1,6 +1,6 @@
 /**
  * Jogo Pedra, Papel ou Tesoura (JoKenPo)
- * @author Erica Viana
+ * @author Wesley Souza
  */
 
 // Importar biblioteca necessária
