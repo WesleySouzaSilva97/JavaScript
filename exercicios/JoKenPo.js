@@ -40,26 +40,32 @@ switch (jogador) {
 }
 
 // Lógica do computador
+let opcao
 computador = Math.floor(Math.random() * 3 + 1)
 
-switch (computador) {
-    case 1:
-        console.log("computador escolheu: PEDRA")
-        break
-    case 2:
-        console.log("computador escolheu: PAPEL")
-        break
-    case 3:
-        console.log("computador escolheu: TESOURA")
-        break
-}
+do {
+    switch (computador) {
+        case 1:
+            console.log("computador escolheu: PEDRA")
+            break
+        case 2:
+            console.log("computador escolheu: PAPEL")
+            break
+        case 3:
+            console.log("computador escolheu: TESOURA")
+            break
+    }
+    
+    // Lógica para determinar o vencedor ou declarar empate
+    
+    if (jogador === computador ){
+        console.log ("EMPATE".cyan)
+    } else if (jogador === 1 && computador === 3 || jogador === 2 && computador === 1 || jogador === 3 && computador === 2) {
+        console.log ("Jogador VENCEU".green)
+    } else {
+        console.log ("Computador VENCEU".yellow)
+    }
+    opcao = input.question("Deseja jogar novamente(s/n)")
 
-// Lógica para determinar o vencedor ou declarar empate
+} while (opcao === 's');
 
-if (jogador === computador ){
-    console.log ("EMPATE".cyan)
-} else if (jogador === 1 && computador === 3 || jogador === 2 && computador === 1 || jogador === 3 && computador === 2) {
-    console.log ("Jogador VENCEU".green)
-} else {
-    console.log ("Computador VENCEU".yellow)
-}

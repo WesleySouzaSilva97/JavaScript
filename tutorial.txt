@@ -189,6 +189,7 @@ switch (variável) {
 }
 
 Estruturas de controle - Laços de repetições 
+_____________________________________________________________________________________________________________________________
 
 for (let i -1; i < 10; i++) {
     // Coloque o código aqui dentro será repetido enquanto a condição for verdadeira
@@ -204,3 +205,13 @@ Uso do laço for
 1) Percorrer uma estrutura de dados (IMPORTANTE)
 2) Simplificar o código
 3) Fazer cálciulos levando em conta a variavel interna do laço
+
+while (condição) {
+    //condição verdadeira
+}
+
+do{
+    //executa o código um independente da condição e depois analisa a condição
+}while (condição)
+
+As estrutura while e do-while são estruturas de repetições infinitas, ou seja enquanto a condição for verdadeira o codigo interno sera repetida infinitamente
