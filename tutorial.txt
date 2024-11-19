@@ -215,3 +215,19 @@ do{
 }while (condição)
 
 As estrutura while e do-while são estruturas de repetições infinitas, ou seja enquanto a condição for verdadeira o codigo interno sera repetida infinitamente
+________________________________________________________________________________________________________________________
+
+Executando JavaScriptjunto com o HTML
+- Execução interna no próprio documento HTML
+- Link com um documento JS (preferencialmente)
+
+
+_______________________________________________________________________________________________________________________
+POO (Programação orientada a objetos)
+
+objeto -> estreutura de dados
+
+Abstração
+Herança
+Polimorfismo
+Encapsulamento

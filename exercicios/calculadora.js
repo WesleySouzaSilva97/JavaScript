@@ -9,9 +9,7 @@ let a, b, opcao, restart
 
 do {
 
-console.clear()
-console.log("Calculadora")
-
+console.clear()10
 console.log(" _____     _         _       _             ")
 console.log("|     |___| |___ _ _| |___ _| |___ ___ ___ ")
 console.log("|   --| .'| |  _| | | | .'| . | . |  _| .'|")
