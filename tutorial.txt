@@ -247,3 +247,14 @@ Encapsulamento
 
 //Observações
 Toda classe modelo obrigatóriamente deve iniciar com letra maiúscula
+
+Dica:
+
+Classe (Biologia: mamiferos) 
+
+Lingua Portuguesa:
+Obejeto (substantivo)
+
+Atributo (adjetivo)
+
+Métodos (verbos)
