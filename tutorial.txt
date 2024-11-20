@@ -226,8 +226,24 @@ ________________________________________________________________________________
 POO (Programação orientada a objetos)
 
 objeto -> estreutura de dados
+Conceito relacionado a estruturas de dados:
+CRUD (Create Read Update Delete)
+São as 4 operações básicas que podemos realizar com a estrutura de dados:
+ 
+Create -> Inserção de dados na estrutura
+Read -> Pesquisa de dados na estrutura
+Update -> Alteração de dados na estrutura
+Delete -> Exclusão de dados
 
+Pilares da programação orientada a obejetos
+// Reutilização
 Abstração
 Herança
 Polimorfismo
 Encapsulamento
+
+//Segurança
+Encapsulamento
+
+//Observações
+Toda classe modelo obrigatóriamente deve iniciar com letra maiúscula
