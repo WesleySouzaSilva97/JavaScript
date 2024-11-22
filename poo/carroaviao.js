@@ -1,5 +1,6 @@
 /** 
  * Fundamentos POO
+ * @author Wesleu Souza
  */
 
 // criar classe
@@ -49,7 +50,7 @@ class Aviao extends Carro {
         console.log(`envergadura: ${this.envergadura}`)
     }
     aterrizar(){
-        console.log(`Aterrizando o ${this.ano} avião`)
+        console.log(`o avião está aterrizando`)
     }
     
     acelerar(){
@@ -76,4 +77,4 @@ carro2.desligar()
 const aviao1 = new Aviao(2022, "Vermelho", 50)
 aviao1.criarAviao()
 aviao1.acelerar()  // Avião no solo
-
+aviao1.aterrizar()
