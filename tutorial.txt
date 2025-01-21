@@ -275,3 +275,6 @@ Usos do vetor:
 1) Simplificar e minimizar o código 
 2) Problemas que precisam armazenar dados em uma sequência - Exemplo: o jogo Genius
 3) Estrutura de dados em operações com o banco de dados
+
+
+testes
