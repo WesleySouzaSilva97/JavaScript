@@ -277,4 +277,3 @@ Usos do vetor:
 3) Estrutura de dados em operações com o banco de dados
 
 
-testes

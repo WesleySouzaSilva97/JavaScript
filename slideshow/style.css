@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.container img {
+    max-width: 100%;
+}
+
+/* Classes que serão manipulados pelo JS */
+#slide {
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+}
+
+/* Saida */
+#slide.slideEsq {
+    transform: translateX(-100%);
+    opacity: 0; /*transparente*/
+}
+
+/* Entrada */
+#slide.slideDir {
+    transform: translateX(0);
+    opacity: 1; /* sólido*/
+}
