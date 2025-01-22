@@ -12,7 +12,10 @@
     max-width: 100%;
 }
 
-/* Classes que serão manipulados pelo JS */
+/* Classes que serão manipulados pelo JS 
+    ease-im-out (efeito de transição suave)
+    .slideEsq e .slideDir ( classes que serão adcionadas ao HTML pelo JS)
+    transition transform (efeitos de animação do CSS (rolagem na horizontal  e fade)*/
 #slide {
     transition: transform 1s ease-in-out, opacity 1s ease-in-out;
 }
