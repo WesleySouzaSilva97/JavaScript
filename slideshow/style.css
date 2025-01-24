@@ -20,14 +20,14 @@
     transition: transform 1s ease-in-out, opacity 1s ease-in-out;
 }
 
-/* Saida */
-#slide.slideEsq {
+/* ENTRADA */
+#slide.slideIn {
     transform: translateX(-100%);
     opacity: 0; /*transparente*/
 }
 
-/* Entrada */
-#slide.slideDir {
+/* Saida  */
+#slide.slideOut {
     transform: translateX(0);
     opacity: 1; /* sólido*/
 }
