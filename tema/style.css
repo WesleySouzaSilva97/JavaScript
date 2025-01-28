@@ -1,0 +1,21 @@
+/*
+    color-scheme:
+    light (claro)
+    dark (escuro)
+    light dark (automático - de acordo com o sitema)
+    Obs: Não definir cores para background e textos 
+*/
+
+
+html {
+    color-scheme: light dark;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.container {
+    width: max-content;
+    margin: 0;
+}
