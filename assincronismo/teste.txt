@@ -1,0 +1,2 @@
+Wesley Souza
+Exemplo de uso dos novos recursos de assincronismo no JS (async - await
