@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busca de Endereço por CEP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h2>Busca de Endereço por CEP</h2>
+    <img class="centralizar" src="img/cep.jfif" alt="cep">
+    <form>
+        <fieldset class="usuario">
+            <legend>Identificação do usuário</legend>
+            <p>
+                <label for="cnome">Nome: </label> <!-- o "for" deve ser o mesmo nome que está no "id" do input -->
+                <input type="text" name="nome" id="cnome" size="30" maxlength="50" placeholder="Nome completo" required
+                    autofocus> <!-- "required torna o preenchimento obrigatório" -->
+            </p>
+            <p>
+                <label for="cphone">Telefone:</label>
+                <input type="tel" name="telefone" id="cphone" size="15" maxlength="15" placeholder="Digite seu telefone"
+                    required oninput="mascaraTelefone(this)">
+            </p>
+            <p>
+                <label for="cemail">E-mail:</label>
+                <!-- O "label" com input do tipo email exige que tenha um @, mas não significa que seja um e-mail válido -->
+                <input type="email" name="email" id="cemail" size="30" maxlength="50" placeholder="Digite seu e-mail"
+                    required>
+            </p>
+
+            <p>
+                <label for="cnasc">Data de nascimento:</label>
+                <input type="date" name="nasc" id="cnasc">
+            </p>
+
+        </fieldset>
+
+        <fieldset class="endereco">
+            <legend>Endereço do usuário</legend>
+            <p>
+                <label for="cep">CEP:</label>
+                <input type="text" id="cep" maxlength="9" onblur="buscarEndereco()">
+            </p>
+            <p>
+                <label for="logradouro">Logradouro:</label>
+                <input type="text" id="logradouro">
+            </p>
+            <p>
+                <label for="numero">Número:</label>
+                <input type="text" id="numero">
+            </p>
+            <p>
+                <label for="complemento">Complemento:</label>
+                <input type="text" id="Complemento">
+            </p>
+            <p>
+                <label for="bairro">Bairro:</label>
+                <input type="text" id="bairro">
+            </p>
+            <p>
+                <label for="cidade">Cidade:</label>
+                <input type="text" id="cidade">
+            </p>
+            <p>
+                <label for="uf">UF:</label>
+                <select id="uf" name="uf">
+                    <option value="Selecione">Selecione</option>
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                </select>
+            </p>
+
+        </fieldset>
+
+        <button type="submit" name="enviar" class="btn">Enviar</button>
+        <button type="reset" name="limpar" class="btn">Limpar</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+
+</html>
